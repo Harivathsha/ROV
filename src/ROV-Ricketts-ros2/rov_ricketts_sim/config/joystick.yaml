@@ -1,0 +1,32 @@
+joy_node:
+  ros__parameters:
+    device_id: 0
+    deadzone: 0.05
+    autorepeat_rate: 20.0
+
+thruster_teleop:
+  ros__parameters:
+    # X/A/Y/B buttons
+    front_left_button: 2      # X
+    front_right_button: 0     # A
+    rear_left_button: 3       # Y
+    rear_right_button: 1      # B
+
+    # Prefer D-pad as AXES (common on Xbox)
+    dpad_horizontal_axis: 6   # left=-1, right=+1
+    dpad_vertical_axis: 7     # down=-1, up=+1
+    dpad_threshold: 0.5
+
+    # If your driver reports D-pad as buttons instead, set these (and set axes to -1)
+    dpad_up_button: -1
+    dpad_right_button: -1
+    dpad_left_button: -1
+
+    # Left Trigger (LT) as AXIS (common); try 2 or sometimes 5
+    lt_axis: 2
+    lt_axis_threshold: 0.5
+
+    # If LT is a button instead, set its index here (and set lt_axis to -1)
+    negative_trigger_button: -1
+
+    thruster_output: -30.0

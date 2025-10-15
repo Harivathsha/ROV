@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+    <model name="shark">
+        <static>true</static>
+        <pose>0 0 -10 1.57 0 0</pose>
+        <link name="shark">
+            <collision name="shark_collision">
+                <geometry>
+                    <mesh>
+                        <uri>models://shark/resources/Shark.stl</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="shark_visual">
+                <geometry>
+                    <mesh>
+                        <uri>models://shark/resources/Shark.stl</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
